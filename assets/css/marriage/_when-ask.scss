@@ -1,0 +1,43 @@
+.when-ask {
+    padding: 45px 0 90px;
+}
+
+.when-ask .when-ask {
+    &__title {
+        margin: 0 0 40px 0;
+    }
+    &__body {
+        >*:not(:last-child) {
+            margin: 0 0 50px 0;
+        }
+    }
+    &__video {
+        .video {
+            padding: (600px/1280px)*100% 0 0 0;
+        }
+    }
+}
+/*===================================================================================================================*/
+@media (max-width: 992px) {
+    .when-ask .when-ask {
+        &__title {
+            margin: 0 0 24px 0;
+        }
+        &__body {
+            >*:not(:last-child) {
+                margin: 0 0 24px 0;
+            }
+        }
+        &__video {
+            .video {
+                padding: (200px/288px)*100% 0 0 0;
+            }
+        }
+    }
+}
+/*===================================================================================================================*/
+@media (max-width: 600px) {
+    .when-ask {
+        padding: 20px 0 45px;
+    }
+}

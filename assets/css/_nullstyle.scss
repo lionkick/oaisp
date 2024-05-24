@@ -1,0 +1,193 @@
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Bold.eot");
+	src:
+		local("Gilroy Bold"),
+		local("Gilroy-Bold"),
+		url("../fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Gilroy-Bold.woff") format("woff"),
+		url("../fonts/Gilroy-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-SemiBold.eot");
+	src:
+		local("Gilroy SemiBold"),
+		local("Gilroy-SemiBold"),
+		url("../fonts/Gilroy-SemiBold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Gilroy-SemiBold.woff") format("woff"),
+		url("../fonts/Gilroy-SemiBold.ttf") format("truetype");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Medium.eot");
+	src:
+		local("Gilroy Medium"),
+		local("Gilroy-Medium"),
+		url("../fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Gilroy-Medium.woff") format("woff"),
+		url("../fonts/Gilroy-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Regular.eot");
+	src:
+		local("Gilroy Regular"),
+		local("Gilroy-Regular"),
+		url("../fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Gilroy-Regular.woff") format("woff"),
+		url("../fonts/Gilroy-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-RegularItalic.eot");
+	src:
+		local("Gilroy Regular Italic"),
+		local("Gilroy-RegularItalic"),
+		url("../fonts/Gilroy-RegularItalic.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Gilroy-RegularItalic.woff") format("woff"),
+		url("../fonts/Gilroy-RegularItalic.ttf") format("truetype");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-BoldItalic.eot");
+	src:
+		local("Gilroy Bold Italic"),
+		local("Gilroy-BoldItalic"),
+		url("../fonts/Gilroy-BoldItalic.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Gilroy-BoldItalic.woff") format("woff"),
+		url("../fonts/Gilroy-BoldItalic.ttf") format("truetype");
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Black.eot");
+	src:
+		local("Gilroy Black"),
+		local("Gilroy-Black"),
+		url("../fonts/Gilroy-Black.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Gilroy-Black.woff") format("woff"),
+		url("../fonts/Gilroy-Black.ttf") format("truetype");
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Cormorant";
+	src: url("../fonts/Cormorant-SemiBold.eot");
+	src:
+		local("Cormorant SemiBold"),
+		local("Cormorant-SemiBold"),
+		url("../fonts/Cormorant-SemiBold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Cormorant-SemiBold.woff") format("woff"),
+		url("../fonts/Cormorant-SemiBold.ttf") format("truetype");
+	font-weight: 600;
+	font-style: normal;
+}
+
+body * {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+body *,
+body *:before,
+body *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-family: "Gilroy", "Arial", sans-serif;
+	color: #000000;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a {
+	transition: 0.2s;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Bahnschrift", "Arial", sans-serif;
+	font-size: inherit;
+	font-weight: normal;
+	color: #242424;
+}
+/*===================================================================================================================*/

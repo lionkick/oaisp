@@ -1,0 +1,139 @@
+.description {
+	position: relative;
+	padding: 70px 0 50px;
+	@media (max-width: 992px) {
+		padding: 40px 0 40px;
+	}
+}
+
+.description .description {
+	&__container {}
+
+	&__body {
+		@media (min-width: 993px) {
+			display: -ms-grid;
+			display: grid;
+			-webkit-box-align: start;
+			-ms-flex-align: start;
+			align-items: start;
+			-ms-grid-rows: auto 23px 1fr;
+			grid-template-rows: auto 1fr;
+		
+			gap: 23px 70px;
+			-ms-grid-columns: 1fr 70px (640px/1280px)*100%;
+			grid-template-columns: 1fr (640px/1280px)*100%;
+			grid-template-areas:
+			"description__title description__image"
+			"description__text description__image";
+			
+			@media (max-width: 1439px) {
+				gap: 23px 55px;
+				-ms-grid-columns: 1fr 55px (640px/1280px)*100%;
+			}
+		}	
+	}
+
+	&__title {
+		align-self: start;
+		grid-area: description__title;
+	}
+
+	&__image-grid-cell {
+		grid-area: description__image;
+		// height: 626px;
+		// margin: 10px 0 0 0;
+		// position: relative;
+		@media (max-width: 992px) {
+			margin: 23px 0 0 0;
+		}
+		@media (max-width: 600px) {
+			padding-top: (216px/288px) * 100%;
+			position: relative;
+		}
+	}
+
+	&__image-wrap {
+		@media (min-width: 993px) {
+			position: absolute;
+			bottom: 50px;
+			height: 560px;
+			left: calc((1280px - 640px) + (100% - 1280px)/2);
+			width: calc((1280px - 640px) + (100% - 1280px)/2);
+		}
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 32px;
+		@media (max-width: 1439px) {
+			gap: 20px;
+		}
+		@media (max-width: 768px) {
+			gap: 10px;
+		}
+		@media (max-width: 600px) {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__image {
+		position: relative;
+		@media (max-width: 992px) {
+			height: 460px;
+		}
+		@media (max-width: 768px) {
+			height: 400px;
+		}
+		@media (max-width: 600px) {
+			height: unset;
+		}
+
+		&:before {
+			position: absolute;
+			content: attr(data-label);
+			transition: 0.2s ease-out;
+			left: 0;
+			bottom: 0;
+			display: inline-block;
+			z-index: 1;
+
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 15px;
+			line-height: 19px;
+			color: #FFFFFF;
+			padding: 6px 12px 4px;
+			background: #4C519E;
+			text-transform: uppercase;
+			@media (max-width: 768px) {
+				top: 0;
+				bottom: unset;
+			}
+		}
+
+		&._before {
+
+		}
+		&._after {
+			
+		}
+	}
+
+	&__text {
+		align-self: start;
+		grid-area: description__text;
+		p:not(:last-child) {
+			margin: 0 0 (28px/17px) * 1em 0;
+		}
+		@media (max-width: 992px) {
+			margin: 25px 0 0 0;
+			p:not(:last-child) {
+				margin: 0 0 (24px/15px) * 1em 0;
+			}
+		}
+
+	}
+}

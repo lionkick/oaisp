@@ -1,0 +1,96 @@
+.why {
+    padding: 85px 0 100px;
+}
+
+.why .why {
+    &__title {
+        margin: 0 0 85px 0;
+    }
+    &__body {
+        @media (min-width: 993px) {
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: 1fr 20px 1fr;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px 20px;
+        }
+    }
+}
+
+.why .item-why {
+    padding: 0 60px;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title,
+    &__text {
+        text-align: center;
+        color: #242424;
+    }
+    &__title {
+        margin: 41px 0 0 0;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: (43/36);
+        text-transform: uppercase;
+    }
+    &__text {
+        margin: 12px 0 0 0;
+    }
+}
+/*===================================================================================================================*/
+@media (max-width: 1439px) {
+    .why .item-why {
+        padding: 0 48px;
+    }
+}
+/*===================================================================================================================*/
+@media (max-width: 992px) {
+    .why .why {
+        &__title {
+            br {display: none;}
+        }
+        &__item {
+            width: 100%;
+            max-width: 510px;
+            margin: 60px auto 0;
+        }
+    }
+
+    .why .item-why {
+        padding: 0;
+        &__title {
+            margin: 25px 0 0 0;
+        }
+        &__text {
+            margin: 8px 0 0 0;
+        }
+    }
+}
+/*===================================================================================================================*/
+@media (max-width: 600px) {
+    .why {
+        padding: 40px 0;
+    }
+
+    .why .why {
+        &__title {
+            margin: 0;
+        }
+        &__item {
+            max-width: 450px;
+            margin: 34px auto 0;
+        }
+    }
+
+    .why .item-why {
+        &__icon {
+            height: 50px;
+        }
+        &__title {
+            font-size: 23px;
+        }
+    }
+}

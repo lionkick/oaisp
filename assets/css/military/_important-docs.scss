@@ -1,0 +1,116 @@
+.important-docs {
+	&__container {
+	}
+
+	&__title {
+		margin-bottom: 40px;
+		@media (min-width: 601px) {
+			margin-bottom: 60px;
+		}
+	}
+
+	&__body {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 30px 20px;
+		padding: 28px 16px 30px;
+		@media (min-width: 426px) {
+			padding: 60px 20px;
+		}
+		@media (min-width: 601px) {
+			padding: 80px 40px;
+		}
+		background-color: #e5e5e5;
+		@media (min-width: 993px) {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+	}
+
+	&__item {
+	}
+}
+.important-docs .item-important {
+	display: flex;
+	justify-content: center;
+
+	&__link {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		transition: 0.2s ease-out;
+		@media (any-hover: hover) {
+			&:hover {
+				.item-important__icon {
+					background-color: rgba(76, 81, 158, 0.1);
+				}
+				.item-important__title {
+					color: #4c519e;
+				}
+			}
+		}
+	}
+
+	&__icon {
+		transition: 0.2s ease-out;
+		background-color: transparent;
+
+		width: 106px;
+		height: 106px;
+		flex: 0 0 106px;
+		svg {
+			width: 32px;
+			transform: translateX(1px);
+		}
+		@media (min-width: 426px) {
+			width: 140px;
+			height: 140px;
+			flex: 0 0 140px;
+			svg {
+				width: 44px;
+				transform: translateX(2px);
+			}
+		}
+		@media (min-width: 601px) {
+			width: 182px;
+			height: 182px;
+			flex: 0 0 182px;
+			svg {
+				width: 56px;
+			}
+		}
+		@media (max-width: 1439px) and (min-width: 993px) {
+			width: 160px;
+			height: 160px;
+			flex: 0 0 160px;
+			svg {
+				width: 50px;
+			}
+		}
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid #4c519e;
+		border-radius: 50%;
+		color: #4c519e;
+	}
+
+	&__title {
+		color: #242424;
+		text-align: center;
+		font-weight: 700;
+		text-transform: uppercase;
+		transition: 0.2s ease-out;
+		word-break: break-word;
+
+		margin-top: 10px;
+		font-size: 15px;
+		font-weight: 600;
+		line-height: 24px;
+		@media (min-width: 601px) {
+			margin-top: 30px;
+			font-size: 21px;
+			line-height: 152%;
+		}
+	}
+}

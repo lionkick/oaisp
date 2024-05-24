@@ -1,0 +1,203 @@
+.documents {
+    position: relative;
+    &:before {
+        z-index: -1;
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: calc((100% - 1280px)/2 + 860px);
+        background-color: #13153B;
+    }
+}
+
+.documents .documents {
+    &__container {
+        padding: 88px 0 95px;
+        position: relative;
+    }
+    &__title {
+        margin: 0 0 40px 0;
+        color: #FFFFFF;
+    }
+    &__item {
+        padding: 0 0 0 100px;
+        color: #FFFFFF;
+        position: relative;
+        &:not(:last-child) {
+            margin: 0 0 22px 0;
+        }
+        &:before {
+            position: absolute;
+            //bottom: 0;
+            top: -2px;
+            left: 51px;
+            transform: translate(-50%, 0);
+            content: attr(data-order);
+
+            font-family: Bahnschrift, Arial, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 1;
+            text-align: center;
+            text-transform: uppercase;
+            color: #4C519E;
+        }
+    }
+}
+
+.documents .images-documents {
+    &__item {
+        position: absolute;
+        width: 444px;
+        .main-documents-image__body,
+        .bg-documents-image__body {
+            width: 100%;
+            padding: (458px/444px)*100% 0 0 0;
+        }
+    }
+}
+
+.documents .main-documents-image {
+    z-index: -1;
+    bottom: 85px;
+    right: 195px;
+}
+
+.documents .bg-documents-image {
+    z-index: 1;
+    bottom: -85px;
+    right: 0;
+}
+/*===================================================================================================================*/
+@media (max-width: 1439px) {
+    .documents {
+        &:before {
+            width: calc((100% - 1024px)/2 + 688px);
+        }
+    }
+
+    .documents .images-documents {
+        &__item {
+            width: 355px;
+        }
+    }
+
+    .documents .main-documents-image {
+        bottom: 68px;
+        right: 156px;
+    }
+
+    .documents .bg-documents-image {
+        bottom: -68px;
+    }
+}
+/*===================================================================================================================*/
+@media (max-width: 1200px) {
+
+    .documents .images-documents {
+        &__item {
+            width: 330px;
+        }
+    }
+
+    .documents .main-documents-image {
+        bottom: 60px;
+        right: 140px;
+    }
+
+    .documents .bg-documents-image {
+        bottom: -60px;
+    }
+}
+/*===================================================================================================================*/
+@media (max-width: 992px) {
+    .documents {
+        &:before {
+            width: calc((100% - 720px)/2 + 720px - 26px);
+        }
+    }
+
+    .documents .documents {
+        &__container {
+            padding: 88px 0 160px;
+        }
+    }
+
+    .documents .images-documents {
+        &__item {
+            width: 250px;
+        }
+    }
+
+    .documents .main-documents-image {
+        bottom: -130px;
+        right: 90px;
+    }
+
+    .documents .bg-documents-image {
+        bottom: -220px;
+        right: -16px;
+    }
+}
+/*===================================================================================================================*/
+@media (max-width: 768px) {
+    .documents {
+        &:before {
+            width: calc(100% - 16px - 26px);
+        }
+    }
+
+    .documents .documents {
+        &__container {
+            padding: 88px 16px 160px;
+        }
+        &__body {
+            padding: 0 50px 0 0;
+        }
+    }
+
+    .documents .bg-documents-image {
+        right: 0;
+    }
+}
+/*===================================================================================================================*/
+@media (max-width: 600px) {
+    .documents .documents {
+        &__container {
+            padding: 40px 16px 160px;
+        }
+        &__title {
+            margin: 0 0 22px 0;
+            padding: 0 50px 0 0;
+        }
+        &__item {
+            padding: 0 0 0 40px;
+            &:not(:last-child) {
+                margin: 0 0 16px 0;
+            }
+            &:before {
+                left: 9px;
+                top: -5px;
+            }
+        }
+    }
+
+    .documents .images-documents {
+        &__item {
+            width: 183px;
+        }
+    }
+
+    .documents .main-documents-image {
+        bottom: -65px;
+        right: 81px;
+    }
+
+    .documents .bg-documents-image {
+        bottom: -135px;
+        right: 0;
+    }
+}

@@ -1,0 +1,223 @@
+.popup {
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	background: rgba(13, 15, 47, 0.6);
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.5s ease 0s;
+	overflow-y: auto;
+	overflow-x: hidden;
+	&.popup_open {
+		opacity: 1;
+		visibility: visible;
+		.popup__content {
+			opacity: 1;
+			transform: perspective(600px) translate(0vh, 0vh) rotateX(0deg);
+		}
+	}
+}
+
+.popup .popup {
+	&__body {
+		min-height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 30px 16px;
+	}
+	&__content {
+		background-color: #ffffff;
+		width: 100%;
+		max-width: 670px;
+		position: relative;
+
+		opacity: 0;
+		transition: all 0.5s ease 0s;
+		transform: perspective(600px) translate(0vh, -50vh) rotateX(45deg);
+		border-radius: 10px;
+	}
+	&__close {
+		cursor: pointer;
+		color: #13153b;
+		position: absolute;
+		top: 10px;
+		right: 9px;
+		transition: 0.2s ease-out;
+		&:hover {
+			color: #69cccb;
+		}
+	}
+	&__title {
+		font-family: Bahnschrift, Arial, sans-serif;
+		font-weight: 600;
+		font-size: 28px;
+		line-height: (36/28);
+		text-align: center;
+		text-transform: uppercase;
+		color: #4c519e;
+	}
+	&__subtitle {
+		font-weight: 500;
+		font-size: 23px;
+		line-height: (28/23);
+		text-align: center;
+		color: #2b2b2b;
+	}
+}
+
+.popup .contact-form {
+	&__group {
+		position: relative;
+		&:not(:first-child) {
+			margin: 40px 0 0 0;
+		}
+	}
+	&__label {
+		font-weight: 600;
+		position: absolute;
+		bottom: calc(100% + 6px);
+		left: 0;
+	}
+	&__label,
+	&__input {
+		font-size: 15px;
+		line-height: 18px;
+		color: #242424;
+	}
+	&__input,
+	&__button {
+		width: 100%;
+		height: 50px;
+		border-radius: 10px;
+	}
+	&__input {
+		padding: 10px 16px;
+		font-weight: normal;
+		background: #f0f0f0;
+		border: 1px solid #dbdbdb;
+		transition: 0.2s ease-out;
+		position: relative;
+		&::placeholder {
+			position: absolute;
+			left: 16px;
+			top: 50%;
+			transform: translate(0, -50%);
+			font-size: 13px;
+			line-height: (16/13);
+			color: #aaaaaa;
+			transition: 0.2s ease-out;
+		}
+		&:focus {
+			border: 1px solid #69cccb;
+			&::placeholder {
+				opacity: 0;
+				visibility: hidden;
+			}
+		}
+	}
+	&__button {
+		margin: 30px 0 0 0;
+		color: #13153c;
+		&:hover,
+		&:focus {
+			color: #13153c;
+		}
+	}
+}
+/*===================================================================================================================*/
+#contact-popup.popup .popup {
+	&__content {
+		width: 100%;
+		max-width: 670px;
+		padding: 50px 24px 58px;
+	}
+	&__form {
+		margin: 44px auto 0;
+		width: 100%;
+		max-width: 380px;
+		overflow: hidden;
+		iframe {
+			max-width: 100%;
+			margin-bottom: -80px;
+		}
+	}
+}
+
+#thanks-popup.popup .popup {
+	&__content {
+		width: 100%;
+		max-width: 532px;
+		padding: 50px 16px 61px;
+		text-align: center;
+	}
+	&__title,
+	&__subtitle {
+		margin: 20px 0 0 0;
+	}
+}
+/*===================================================================================================================*/
+@media (max-width: 600px) {
+	.popup .popup {
+		&__close {
+			top: 5px;
+			right: 5px;
+		}
+	}
+
+	#contact-popup.popup .popup {
+		&__content {
+			padding: 37px 18px 32px;
+		}
+	}
+
+	#thanks-popup.popup .popup {
+		&__content {
+			padding: 42px 16px 40px;
+		}
+	}
+}
+/*===================================================================================================================*/
+@media (max-width: 425px) {
+	.popup .popup {
+		&__title {
+			font-size: 21px;
+			line-height: (25/21);
+		}
+		&__subtitle {
+			font-size: 15px;
+			line-height: (21/15);
+		}
+	}
+
+	.popup .contact-form {
+		&__input,
+		&__button {
+			height: 40px;
+		}
+		&__input {
+			&::placeholder {
+				font-size: 11px;
+				line-height: (13/11);
+			}
+		}
+	}
+
+	#contact-popup.popup .popup {
+		&__form {
+			margin: 48px auto 0;
+		}
+	}
+
+	#thanks-popup.popup .popup {
+		&__title {
+			margin: 15px 0 0 0;
+		}
+		&__subtitle {
+			margin: 12px 0 0 0;
+		}
+	}
+}

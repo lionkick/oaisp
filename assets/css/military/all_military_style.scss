@@ -1,0 +1,126 @@
+.page-military .services-list,
+.page-military .big-videos,
+.page-military .why,
+.page-military .team,
+.page-military .useful-docs,
+.page-military .feedback,
+.page-military .important-docs {
+	padding: 50px 0;
+	@media (max-width: 600px) {
+		padding: 30px 0;
+	}
+}
+.page-military .feedback {
+	padding-bottom: 100px;
+	@media (max-width: 600px) {
+		padding-bottom: 60px;
+	}
+}
+.page-military .important-docs {
+	padding-top: 100px;
+	@media (max-width: 600px) {
+		padding-top: 60px;
+	}
+}
+.page-military > *:first-child {
+	padding-top: 100px;
+	@media (max-width: 600px) {
+		padding-top: 60px;
+	}
+}
+.page-military > *:last-child {
+	padding-bottom: 100px;
+	@media (max-width: 600px) {
+		padding-bottom: 60px;
+	}
+}
+
+.why .item-why__content {
+	max-width: 378px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.page-military .why-numbers {
+	padding: 40px 0 50px;
+	@media (min-width: 601px) {
+		padding: 85px 0;
+	}
+}
+.page-military .why-numbers .why-numbers__title {
+	@media (min-width: 1440px) {
+		margin: 0 0 220px 0;
+	}
+	@media (max-width: 992px) {
+		margin: 0 0 220px 0;
+	}
+	@media (max-width: 600px) {
+		margin: 0 0 140px 0;
+	}
+}
+
+.page-military .why-numbers .item-numbers {
+	&:not(:last-child) {
+		@media (max-width: 992px) {
+			margin: 0 0 170px 0;
+		}
+		@media (max-width: 600px) {
+			margin: 0 0 110px 0;
+		}
+	}
+	&:nth-child(1) {
+	}
+	&:nth-child(2) {
+	}
+	&:nth-child(3) {
+		.item-numbers__number {
+			transform: translate(-50%, 10%);
+		}
+	}
+
+	&__title {
+		@media (min-width: 993px) {
+			transform: translate(-50%, 50%);
+		}
+
+		bottom: calc(100% + (110 / 36) * 1em);
+		@media (max-width: 992px) {
+			bottom: calc(100% + 30px);
+		}
+		@media (max-width: 600px) {
+			bottom: calc(100% + 20px);
+		}
+	}
+	&__title br {
+		display: block;
+	}
+	&__comment {
+	}
+	&__body {
+	}
+	&__number {
+	}
+	&__placeholder {
+		max-width: 223px;
+		margin: 0 auto;
+		width: 100%;
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+		height: 150px;
+		@media (max-width: 1439px) {
+			height: 130px;
+		}
+		@media (max-width: 992px) {
+			height: 150px;
+		}
+		@media (max-width: 600px) {
+			height: 120px;
+		}
+	}
+}
+
+@import "_big-videos";
+@import "_useful-docs";
+@import "_feedback";
+@import "_important-docs";
+@import "_video-popup";

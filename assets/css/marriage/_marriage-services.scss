@@ -1,0 +1,165 @@
+.marriage-services {
+    padding: 90px 0 45px;
+}
+
+.marriage-services .marriage-services {
+    &__title {
+        margin: 0 0 20px 0;
+    }
+    &__body {
+        position: relative;
+    }
+    &__text {
+        padding: 0 0 0 470px;
+    }
+    &__catalog {
+        margin: 32px 0 0 0;
+        padding: 0 0 0 640px;
+    }
+    &__list {
+        .usual-list__item {
+            &:not(:last-child) {
+                margin: 0 0 22px 0;
+            }
+        }
+    }
+    &__button {
+        margin: 40px 0 0;
+        width: 270px;
+        @media (max-width: 425px) {
+            width: 100%;
+        }
+    }
+}
+
+.marriage-services .images-marriage-services {
+    &__item {
+        position: absolute;
+        width: 414px;
+        .main-marriage-services-image__body,
+        .bg-marriage-services-image__body {
+            width: 100%;
+            height: 513px;
+        }
+    }
+}
+
+.marriage-services .main-marriage-services-image {
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.marriage-services .bg-marriage-services-image {
+    z-index: 0;
+    bottom: 0;
+    left: 170px;
+}
+/*===================================================================================================================*/
+@media (max-width: 1439px) {
+
+    .marriage-services .marriage-services {
+        &__text {
+            padding: 0 0 0 400px;
+        }
+        &__catalog {
+            padding: 0 0 0 520px;
+        }
+        &__list {
+            .usual-list__item {
+                &:not(:last-child) {
+                    margin: 0 0 22px 0;
+                }
+            }
+        }
+    }
+
+    .marriage-services .images-marriage-services {
+        &__item {
+            width: 370px;
+        }
+    }
+
+    .marriage-services .bg-marriage-services-image {
+        left: 115px;
+    }
+}
+/*===================================================================================================================*/
+@media (max-width: 1200px) {
+    .marriage-services .marriage-services {
+        &__list {
+            .usual-list__item {
+                &:not(:last-child) {
+                    margin: 0 0 18px 0;
+                }
+            }
+        }
+    }
+}
+/*===================================================================================================================*/
+@media (max-width: 992px) {
+    .marriage-services .marriage-services {
+        &__title {
+            margin: 0 0 23px 0;
+        }
+        &__text {
+            padding: 0;
+            margin: 30px 0 0 0;
+        }
+        &__catalog {
+            margin: 16px 0 0 0;
+            padding: 0;
+        }
+        &__list {
+            .usual-list__item {
+                &:not(:last-child) {
+                    margin: 0 0 16px 0;
+                }
+            }
+        }
+        &__button {
+            margin: 23px auto 0;
+        }
+    }
+
+    .marriage-services .images-marriage-services {
+        &__item {
+            position: relative;
+            width: (178px/288px)*100%;
+            .main-marriage-services-image__body,
+            .bg-marriage-services-image__body {
+                height: 350px;
+            }
+        }
+    }
+
+    .marriage-services .main-marriage-services-image {
+        top: unset;
+        left: unset;
+    }
+
+    .marriage-services .bg-marriage-services-image {
+        margin: -150px 36px 0 auto;
+        bottom: unset;
+        left: unset;
+    }
+}
+/*===================================================================================================================*/
+@media (max-width: 600px) {
+    .marriage-services {
+        padding: 40px 0 20px;
+    }
+
+    .marriage-services .images-marriage-services {
+        &__item {
+            .main-marriage-services-image__body,
+            .bg-marriage-services-image__body {
+                height: 210px;
+            }
+        }
+    }
+
+    .marriage-services .bg-marriage-services-image {
+        margin: -90px 36px 0 auto;
+    }
+}

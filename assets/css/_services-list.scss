@@ -1,0 +1,221 @@
+.services-list {
+  overflow: hidden;
+  // .page-marriage & {
+  // 	padding: 135px 0 55px;
+  // 	@media (max-width: 992px) {padding: 270px 0 55px;}
+  // 	@media (max-width: 600px) {padding: 175px 0 20px;}
+  // }
+  &__container {
+  }
+
+  &__title {
+    margin-bottom: 28px;
+    @media (min-width: 601px) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__body {
+    position: relative;
+  }
+  .g-slider__fraction {
+    position: absolute;
+    bottom: calc(100% + 32px);
+    right: 0;
+    @media (min-width: 601px) {
+      display: none;
+    }
+  }
+  .g-slider__pagination {
+    @media (min-width: 601px) {
+      display: none;
+    }
+  }
+
+  &__footer {
+    margin-top: 40px;
+
+    & > *:not(:last-child) {
+      margin: 0 0 18px 0;
+    }
+    @media (min-width: 601px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & > *:not(:last-child) {
+        margin: 0 24px 0 0;
+      }
+    }
+    .btn-filled,
+    .btn-transparent {
+      width: auto;
+      padding-left: 26px;
+      padding-right: 26px;
+      @media (max-width: 600px) {
+        height: 50px;
+        display: flex;
+        max-width: 288px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @media (max-width: 425px) {
+        max-width: 100%;
+      }
+    }
+    .btn-filled {
+      color: #13153c;
+      .page-marriage & {
+        color: #ffffff;
+      }
+    }
+    .btn-transparent {
+      color: #4c519e;
+      border: 1px solid #4c519e;
+      &:hover,
+      &:focus {
+        background-color: #4c519e;
+        color: #ffffff;
+      }
+    }
+  }
+}
+.services {
+  &__slider {
+  }
+}
+.services-slider {
+  &.swiper {
+    overflow: visible;
+  }
+  &__wrapper {
+  }
+  &__wrapper {
+    @media (min-width: 601px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px 16px;
+
+      transform: translate3d(0px, 0px, 0px) !important;
+
+      // height: auto !important;
+    }
+    @media (min-width: 769px) {
+      gap: 60px 24px;
+    }
+    @media (min-width: 993px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  &__slide {
+  }
+  .page-marriage &__slide {
+    &:not(:last-child) {
+      @media (max-width: 600px) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+.services-slide {
+  &__body {
+    position: relative;
+  }
+  &.swiper-slide .services-slide__body {
+    @media (max-width: 600px) {
+      padding-right: 16px;
+    }
+  }
+
+  &__index {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    color: #69cccb;
+    background: #4c519e;
+    font-size: 20px;
+    line-height: 1.1;
+    font-weight: 700;
+    padding: 11px 5px;
+    z-index: 2;
+
+    width: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 601px) {
+      font-size: 30px;
+      width: 73px;
+      padding: 13px 5px;
+    }
+  }
+
+  &__img {
+    padding-top: 60.97561%; /* 250px/410 */
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      transition: 0.2s ease-out;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(76, 81, 158, 0.3);
+      z-index: 1;
+    }
+  }
+
+  &__info {
+    margin-top: 20px;
+    @media (min-width: 601px) {
+      margin-top: 30px;
+      padding-right: 20px;
+    }
+    @media (min-width: 1440px) {
+      padding-right: 44px;
+    }
+  }
+  &__title {
+    color: #242424;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 140%;
+    text-transform: uppercase;
+    @media (min-width: 651px) {
+      font-size: 21px;
+      line-height: 152%;
+    }
+  }
+
+  &__title-comment {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18.2px;
+  }
+
+  &__subtitle {
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 24px;
+    @media (max-width: 600px) {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
+
+  &__list {
+    margin-top: 10px;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

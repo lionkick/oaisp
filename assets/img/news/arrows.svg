@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" >
+  <defs>
+    <symbol id="arrow-left" viewBox="0 0 67 32">
+      <path stroke-width="2.56" d="M66.56 16h-64m0 0 14.72 14.72M2.56 16 17.28 1.28"/>
+    </symbol>
+    <symbol id="arrow-right" viewBox="0 0 67 32">
+      <path stroke-width="2.56" d="M0 16h64m0 0L49.28 1.28M64 16 49.28 30.72"/>
+    </symbol>
+  </defs>
+</svg>
