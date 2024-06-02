@@ -41,3 +41,68 @@
     padding: 40px 0 55px;
   }
 }
+
+.will-main-screen__container {
+  padding-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 20px;
+
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+
+  border-bottom: 2px solid #fff;
+}
+
+.will-main-screen__comment {
+  margin-top: 20px;
+
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.will__pre {
+  margin-top: 40px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #242424;
+}
+
+.why-should__container {
+  padding: 60px 0 60px 0;
+}
+
+.why-should__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 110%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #4c519e;
+}
+
+.why-should__list {
+}
+
+.why-should__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.why-should__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.why-should__icon {
+  margin-bottom: 30px;
+}
