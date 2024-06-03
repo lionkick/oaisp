@@ -70,6 +70,10 @@
   color: #242424;
 }
 
+.why-should {
+  background-color: #f4f4f4;
+}
+
 .why-should__container {
   padding: 60px 0 60px 0;
 }
