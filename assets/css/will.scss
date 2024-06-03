@@ -78,14 +78,19 @@
 }
 
 .why-should {
+  margin-bottom: 60px;
+
   background-color: #f4f4f4;
 }
 
 .why-should__container {
-  padding: 60px 0 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .why-should__title {
+  margin-bottom: 40px;
+
   font-weight: 600;
   font-size: 40px;
   line-height: 110%;
@@ -111,6 +116,140 @@
   margin-bottom: 30px;
 }
 
-// .why-should__item svg {
-//   fill: #69cccb;
-// }
+.why-should__subject {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 140%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #242424;
+}
+
+.why-should__text {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 141%;
+  text-align: center;
+  color: #242424;
+}
+
+.services-include {
+  margin-bottom: 60px;
+}
+
+.services-include__title {
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #4c519e;
+}
+
+.services-include__list .services-include__item {
+  display: block;
+  padding: 10px 20px 10px 30px;
+  background-color: #f4f4f4;
+
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 141%;
+  color: #242424;
+
+  list-style: square;
+}
+
+.services-include__item::marker {
+  color: #69cccb;
+}
+
+.services-include__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.services-include__photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.services-include__info {
+  margin-bottom: 20px;
+}
+
+.why-choose-us {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 60px;
+  background-color: #4c519e;
+}
+
+.why-choose-us__title {
+  margin-bottom: 30px;
+
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 110%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.why-choose-us__list {
+}
+
+.why-choose-us__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.why-choose-us__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.why-choose-us__number {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 140%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #69cccb;
+
+  margin-bottom: 20px;
+}
+
+.why-choose-us__subject {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 140%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+
+  margin-bottom: 10px;
+}
+
+.why-choose-us__text {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 141%;
+  text-align: center;
+  color: #fff;
+}
+
+.how-to-do {
+}
+
+.how-to-do__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #4c519e;
+
+  margin-bottom: 30px;
+}
