@@ -67,6 +67,8 @@
   color: #fff;
 }
 
+// will
+
 .will__pre {
   margin-top: 40px;
 
@@ -75,6 +77,14 @@
   line-height: 140%;
   text-transform: uppercase;
   color: #242424;
+
+  @media screen and (min-width: 993px) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 21px;
+  }
 }
 
 .why-should {
@@ -86,6 +96,11 @@
 .why-should__container {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 
 .why-should__title {
@@ -97,15 +112,28 @@
   text-transform: uppercase;
   text-align: center;
   color: #4c519e;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 60px;
+  }
 }
 
 .why-should__list {
+  @media screen and (min-width: 993px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .why-should__item {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: 993px) {
+    flex-basis: calc(100% / 2) - 25;
+    gap: 25px;
+  }
 }
 
 .why-should__item:not(:last-child) {
@@ -139,6 +167,31 @@
   margin-bottom: 60px;
 }
 
+.services-include__container {
+  @media screen and (min-width: 993px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.services-include__info,
+.services-include__photo {
+  flex-basis: calc(50% - 25px);
+  gap: 25px;
+}
+
+.services-include__info,
+.services-include__photo {
+  flex-basis: calc(50% - 25px);
+  gap: 25px;
+}
+
+.services-include__photo {
+  @media screen and (min-width: 993px) {
+    margin-left: 25px;
+  }
+}
+
 .services-include__title {
   margin-bottom: 20px;
 
@@ -149,26 +202,33 @@
   color: #4c519e;
 }
 
-.services-include__list .services-include__item {
-  display: block;
+.services-include__list {
+}
+
+.services-include__item {
+  display: flex;
+  align-items: center;
   padding: 10px 20px 10px 30px;
   background-color: #f4f4f4;
 
-  font-weight: 400;
   font-size: 17px;
   line-height: 141%;
   color: #242424;
-
-  list-style: square;
 }
 
-.services-include__item::marker {
-  color: #69cccb;
+.services-include__item::before {
+  margin-right: 10px;
+
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #69cccb;
 }
 
-.services-include__item:not(:last-child) {
-  margin-bottom: 10px;
-}
+// .services-include__item:not(:last-child) {
+//   margin-bottom: 10px;
+// }
 
 .services-include__photo img {
   display: block;
@@ -244,6 +304,10 @@
 .how-to-do {
 }
 
+.how-to-do__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .how-to-do__title {
   font-weight: 600;
   font-size: 40px;
@@ -252,4 +316,25 @@
   color: #4c519e;
 
   margin-bottom: 30px;
+}
+
+.how-to-do__icon {
+  margin-bottom: 20px;
+}
+
+.how-to-do__subject {
+  margin-bottom: 5px;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #242424;
+}
+
+.how-to-do__text {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 141%;
+  color: #242424;
 }
