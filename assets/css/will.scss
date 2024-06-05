@@ -377,7 +377,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   @media screen and (min-width: 993px) {
     flex-basis: calc(100% / 2) - 25;
     gap: 25px;
@@ -419,6 +419,15 @@
 }
 
 .how-to-do {
+  // padding-top: 60px;
+  // padding-bottom: 60px;
+  margin-bottom: 60px;
+  // background-color: #4c519e;
+
+  @media screen and (min-width: 1440px) {
+    // padding-top: 80px;
+    // padding-bottom: 80px;
+  }
 }
 
 .how-to-do__item:not(:last-child) {
@@ -433,6 +442,10 @@
   color: #4c519e;
 
   margin-bottom: 30px;
+
+  @media screen and (min-width: 993px) {
+    text-align: center;
+  }
 
   @media screen and (min-width: 1440px) {
     font-size: 60px;
@@ -458,4 +471,59 @@
   font-size: 17px;
   line-height: 141%;
   color: #242424;
+}
+
+.how-to-do__list {
+  @media screen and (min-width: 993px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.how-to-do__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 993px) {
+    flex-basis: calc(100% / 2) - 25;
+    gap: 25px;
+  }
+}
+
+.team {
+  margin-bottom: 60px;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 100px;
+  }
+}
+
+.form__order {
+  margin-bottom: 60px;
+}
+
+.form__title {
+  margin-bottom: 10px;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #4c519e;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 36px;
+  }
+}
+
+.form__subtitile {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #4c519e;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 21px;
+  }
 }

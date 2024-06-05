@@ -447,6 +447,9 @@
   color: #fff;
 }
 
+.how-to-do {
+  margin-bottom: 60px;
+}
 .how-to-do__item:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -458,6 +461,11 @@
   text-transform: uppercase;
   color: #4c519e;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 993px) {
+  .how-to-do__title {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 1440px) {
   .how-to-do__title {
@@ -483,4 +491,74 @@
   font-size: 17px;
   line-height: 141%;
   color: #242424;
+}
+
+@media screen and (min-width: 993px) {
+  .how-to-do__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.how-to-do__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 993px) {
+  .how-to-do__item {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    gap: 25px;
+  }
+}
+
+.team {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1440px) {
+  .team {
+    margin-bottom: 100px;
+  }
+}
+
+.form__order {
+  margin-bottom: 60px;
+}
+
+.form__title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #4c519e;
+}
+@media screen and (min-width: 1440px) {
+  .form__title {
+    font-size: 36px;
+  }
+}
+
+.form__subtitile {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #4c519e;
+}
+@media screen and (min-width: 1440px) {
+  .form__subtitile {
+    font-size: 21px;
+  }
 }/*# sourceMappingURL=will.css.map */
