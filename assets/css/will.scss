@@ -106,12 +106,6 @@
     padding: 0;
   }
 
-  // .will-main-screen__comment {
-  //   &:after {
-  //     display: none;
-  //   }
-  // }
-
   .why {
     padding: 100px 0 100px;
   }
@@ -158,6 +152,10 @@
   text-transform: uppercase;
   text-align: center;
   color: #fff;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 24px;
+  }
 }
 
 // will
@@ -335,6 +333,10 @@
 
 .services-include__info {
   margin-bottom: 20px;
+
+  @media screen and (min-width: 993px) {
+    // margin-bottom: 0;
+  }
 }
 
 .why-choose-us {
@@ -342,6 +344,11 @@
   padding-bottom: 60px;
   margin-bottom: 60px;
   background-color: #4c519e;
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 
 .why-choose-us__title {
@@ -360,12 +367,21 @@
 }
 
 .why-choose-us__list {
+  @media screen and (min-width: 993px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .why-choose-us__item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+  @media screen and (min-width: 993px) {
+    flex-basis: calc(100% / 2) - 25;
+    gap: 25px;
+  }
 }
 
 .why-choose-us__item:not(:last-child) {
