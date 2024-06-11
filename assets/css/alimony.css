@@ -701,6 +701,11 @@
   padding-top: 30px;
   border-top: 1px solid #242424;
 }
+@media screen and (min-width: 993px) {
+  .process__resume {
+    width: 737px;
+  }
+}
 
 .process__text {
   font-size: 21px;
