@@ -49,9 +49,9 @@
     />
 
     <script>
-      if (document.location.host == "www.aoisp.com.ua") {
+      if (document.location.host == 'www.aoisp.com.ua') {
         document.location.href =
-          "https://aoisp.com.ua" + document.location.pathname;
+          'https://aoisp.com.ua' + document.location.pathname;
       }
     </script>
 
@@ -81,33 +81,52 @@
     <script>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
         var f = d.getElementsByTagName(s)[0],
           j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
+          dl = l != 'dataLayer' ? '&l=' + l : '';
         j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
         f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-P5LM4Z3V");
+      })(window, document, 'script', 'dataLayer', 'GTM-P5LM4Z3V');
     </script>
     <!-- End Google Tag Manager -->
     <!-- Meta Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '3834607773438241');
-  fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=3834607773438241&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js'
+      );
+      fbq('init', '3834607773438241');
+      fbq('track', 'PageView');
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=3834607773438241&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
   </head>
 
   <body>
@@ -133,23 +152,10 @@
             <nav class="menu">
               <ul class="menu__list">
                 <li>
-                  <a
-                    href="/"
-                    data-scrollto=".main-screen"
-                    class="menu__link"
-                  >
+                  <a href="/" data-scrollto=".main-screen" class="menu__link">
                     Головна
                   </a>
                 </li>
-                <!-- <li>
-                  <a
-                    href="/index.html#about-us"
-                    data-scrollto=".about-us"
-                    class="menu__link"
-                  >
-                    Про нас
-                  </a>
-                </li> -->
                 <li>
                   <a
                     href="/military.html"
@@ -170,6 +176,15 @@
                 </li>
                 <li>
                   <a
+                    href="/accounting.html"
+                    data-scrollto=".why-numbers"
+                    class="menu__link"
+                  >
+                    Військовий облік
+                  </a>
+                </li>
+                <li>
+                  <a
                     href="/compensation.html"
                     data-scrollto=".feedback"
                     class="menu__link"
@@ -177,12 +192,8 @@
                     Компенсація збитків
                   </a>
                 </li>
-								<li>
-                  <a
-                    href="/news/"
-                    data-scrollto=".feedback"
-                    class="menu__link"
-                  >
+                <li>
+                  <a href="/news/" data-scrollto=".feedback" class="menu__link">
                     Новини
                   </a>
                 </li>
@@ -1062,8 +1073,8 @@
     />
     <script src="/assets/lightgallery/lightgallery.min.js"></script>
     <script type="text/javascript">
-      document.addEventListener("DOMContentLoaded", function (e) {
-        $(".lightgallery").lightGallery();
+      document.addEventListener('DOMContentLoaded', function (e) {
+        $('.lightgallery').lightGallery();
       });
     </script>
     <style>
