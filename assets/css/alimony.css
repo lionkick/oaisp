@@ -406,6 +406,12 @@
   color: #242424;
 }
 
+@media screen and (max-width: 992px) {
+  .alimony-info__about {
+    margin-bottom: 20px;
+  }
+}
+
 .alimony-info__text {
   font-size: 17px;
   line-height: 140%;
@@ -420,4 +426,97 @@
   display: block;
   width: 100%;
   height: auto;
+}
+
+.how-to-get__title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 140%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #242424;
+}
+
+.how-to-get__item {
+  padding: 30px 20px 30px 20px;
+  background-color: #f4f4f4;
+}
+
+.how-to-get__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.how-to-get__num {
+  margin-bottom: 20px;
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  color: #4c519e;
+}
+
+.how-to-get__subject {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 140%;
+  text-align: center;
+  color: #242424;
+}
+
+.how-to-get__text {
+  font-size: 17px;
+  line-height: 140%;
+  text-align: center;
+  color: #242424;
+}
+
+.options {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.options__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #242424;
+}
+
+.options__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.options__subject {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 140%;
+  color: #242424;
+}
+
+.option__variant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: 17px;
+  line-height: 140%;
+  color: #242424;
+}
+
+.option__variant:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+> .option__variant::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #69cccb;
 }/*# sourceMappingURL=alimony.css.map */

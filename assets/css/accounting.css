@@ -616,6 +616,15 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media screen and (min-width: 993px) {
+  .positions__item {
+    width: 50%;
+  }
+}
+
+.rule__list {
+  margin-right: 20px;
+}
 
 .rule__item {
   font-size: 17px;
