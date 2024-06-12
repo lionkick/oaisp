@@ -402,6 +402,8 @@
 }
 
 .accounting-services__title {
+  margin-bottom: 20px;
+
   font-weight: 700;
   font-size: 21px;
   line-height: 140%;
@@ -419,8 +421,8 @@
 }
 
 .accounting-services__item {
-  display: flex;
-  align-items: baseline;
+  position: relative;
+  padding-left: 20px;
 
   font-weight: 400;
   font-size: 17px;
@@ -428,10 +430,15 @@
   color: #242424;
 }
 
-.accounting-services__item::before {
-  margin-right: 10px;
+.accounting-services__item:not(:last-child) {
+  margin-bottom: 10px;
+}
 
-  display: block;
+.accounting-services__item::before {
+  position: absolute;
+  left: 0;
+  top: 8px;
+
   content: '';
   width: 8px;
   height: 8px;
@@ -558,12 +565,12 @@
 }
 
 .rule__item {
+  position: relative;
+  padding-left: 20px;
+
   font-size: 17px;
   line-height: 140%;
   color: #242424;
-
-  display: flex;
-  align-items: baseline;
 }
 
 .rule__item:not(:last-child) {
@@ -571,7 +578,9 @@
 }
 
 .rule__item::before {
-  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  top: 8px;
 
   display: block;
   content: '';
