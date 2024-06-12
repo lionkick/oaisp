@@ -366,6 +366,20 @@
   }
 }
 
+.listing {
+  margin-left: 10px;
+}
+
+.listing::before {
+  position: absolute;
+  left: 0;
+  top: 9px;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #69cccb;
+}
+
 .page-accounting__pre {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -629,19 +643,6 @@
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-}
-
-.rule__item:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.rule__item::before {
-  margin-right: 10px;
-  display: block;
-  content: "";
-  width: 8px;
-  height: 8px;
-  background-color: #69cccb;
 }
 
 .how-order {
