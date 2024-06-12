@@ -142,10 +142,10 @@
     width: 668px;
   }
 
-  @media screen and (min-width: 1440px) {
-    font-size: 65px;
-    width: 668px;
-  }
+  // @media screen and (min-width: 1440px) {
+  //   font-size: 65px;
+  //   width: 668px;
+  // }
 }
 
 // Feedback
@@ -341,7 +341,7 @@
 }
 
 .listing {
-  margin-left: 10px;
+  padding-left: 20px;
 }
 
 .listing::before {
@@ -362,6 +362,7 @@
 }
 
 .appel__pre {
+  font-weight: 500;
   font-size: 17px;
   line-height: 140%;
   text-transform: uppercase;
