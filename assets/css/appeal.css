@@ -139,25 +139,25 @@
     padding: 40px 0 55px;
   }
 }
-.accounting-main-screen__container {
+.appeal-main-screen__container {
   padding-bottom: 20px;
   margin-left: 40px;
   margin-right: 20px;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 21px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
 }
 @media screen and (min-width: 993px) {
-  .accounting-main-screen__container {
+  .appeal-main-screen__container {
     font-size: 50px;
     width: 668px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .accounting-main-screen__container {
+  .appeal-main-screen__container {
     font-size: 65px;
     width: 668px;
   }
@@ -380,21 +380,33 @@
   background-color: #69cccb;
 }
 
-.page-accounting__pre {
-  margin-top: 60px;
-  margin-bottom: 60px;
+.page-appeal__pre {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-.accounting__pre {
-  font-weight: 500;
+.appel__pre {
   font-size: 17px;
   line-height: 140%;
   text-transform: uppercase;
   color: #242424;
 }
 
-.accounting__pre:not(:last-child) {
+.appeal__pre:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.appeal-detail {
+  margin-bottom: 40px;
+}
+
+.appeal-detail__title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 140%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #242424;
 }
 
 .accounting-services__wrapper {
