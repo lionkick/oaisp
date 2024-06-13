@@ -550,12 +550,21 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    gap: 25px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
 .types__item {
   padding: 20px;
   background-color: #f4f4f4;
+}
+@media screen and (min-width: 993px) {
+  .types__item {
+    width: 31%;
+  }
 }
 
 .types__item:not(:last-child) {
@@ -611,6 +620,14 @@
   color: #242424;
 }
 
+@media screen and (min-width: 993px) {
+  .attention__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .attention__pic {
   display: block;
   width: 100%;
@@ -619,6 +636,18 @@
 
 .attention__photo {
   margin-bottom: 25px;
+}
+@media screen and (min-width: 993px) {
+  .attention__photo {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .attention__info {
+    width: 50%;
+    margin-left: 25px;
+  }
 }
 
 .attention__item {
@@ -643,6 +672,12 @@
   text-transform: uppercase;
   color: #4c519e;
 }
+@media screen and (min-width: 993px) {
+  .how-can__title {
+    margin-bottom: 60px;
+    font-size: 60px;
+  }
+}
 
 .how-can__object {
   margin-bottom: 30px;
@@ -654,13 +689,29 @@
   color: #242424;
 }
 
-.how-can__item {
-  padding: 20px;
-  background-color: #f4f4f4;
+@media screen and (min-width: 993px) {
+  .how-can__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1%;
+  }
 }
 
-.how-can__item:not(:last-child) {
-  margin-bottom: 10px;
+.how-can__item {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+@media screen and (min-width: 993px) {
+  .how-can__item {
+    width: 19%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .how-can__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .how-can__num {
@@ -690,12 +741,39 @@
   color: #242424;
 }
 
-.process__item:not(:last-child) {
-  margin-bottom: 40px;
+@media screen and (min-width: 993px) {
+  .process__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .process__item {
+    width: 33%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .process__item:not(:last-child) {
+    margin-bottom: 40px;
+  }
 }
 
 .processing__list {
   padding: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   background-color: #f4f4f4;
 }
 

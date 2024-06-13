@@ -520,12 +520,18 @@
   @media screen and (min-width: 993px) {
     display: flex;
     flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-between;
   }
 }
 
 .types__item {
   padding: 20px;
   background-color: #f4f4f4;
+
+  @media screen and (min-width: 993px) {
+    width: 31%;
+  }
 }
 
 .types__item:not(:last-child) {
@@ -585,6 +591,12 @@
   color: #242424;
 }
 
+.attention__wrapper {
+  @media screen and (min-width: 993px) {
+    display: flex;
+  }
+}
+
 .attention__pic {
   display: block;
   width: 100%;
@@ -593,6 +605,17 @@
 
 .attention__photo {
   margin-bottom: 25px;
+
+  @media screen and (min-width: 993px) {
+    width: 50%;
+  }
+}
+
+.attention__info {
+  @media screen and (min-width: 993px) {
+    width: 50%;
+    margin-left: 25px;
+  }
 }
 
 .attention__item {
@@ -617,6 +640,12 @@
   line-height: 110%;
   text-transform: uppercase;
   color: #4c519e;
+
+  @media screen and (min-width: 993px) {
+    margin-bottom: 60px;
+
+    font-size: 60px;
+  }
 }
 
 .how-can__object {
@@ -630,14 +659,26 @@
   color: #242424;
 }
 
+.how-can__list {
+  @media screen and (min-width: 993px) {
+    display: flex;
+    gap: 1%;
+  }
+}
+
 .how-can__item {
+  background-color: #f4f4f4;
   padding: 20px;
 
-  background-color: #f4f4f4;
+  @media screen and (min-width: 993px) {
+    width: 19%;
+  }
 }
 
 .how-can__item:not(:last-child) {
-  margin-bottom: 10px;
+  @media screen and (max-width: 992px) {
+    margin-bottom: 10px;
+  }
 }
 
 .how-can__num {
@@ -670,12 +711,30 @@
   color: #242424;
 }
 
+.process__list {
+  @media screen and (min-width: 993px) {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.process__item {
+  @media screen and (min-width: 993px) {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .process__item:not(:last-child) {
-  margin-bottom: 40px;
+  @media screen and (max-width: 992px) {
+    margin-bottom: 40px;
+  }
 }
 
 .processing__list {
   padding: 20px;
+  flex-grow: 1;
 
   background-color: #f4f4f4;
 }
