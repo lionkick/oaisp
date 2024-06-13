@@ -467,11 +467,15 @@
 
 .appeal-detail__wrapper {
   display: flex;
-  gap: 25;
+  // gap: 25;
 
   @media screen and (max-width: 992px) {
     margin-bottom: 20px;
     flex-direction: column-reverse;
+  }
+
+  @media screen and (min-width: 993px) {
+    margin-bottom: 30px;
   }
 }
 
@@ -512,6 +516,11 @@
 
 .types__list {
   margin-bottom: 30px;
+
+  @media screen and (min-width: 993px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .types__item {
