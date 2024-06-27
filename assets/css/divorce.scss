@@ -373,6 +373,10 @@
 .divorce__container {
   margin-top: 40px;
   margin-bottom: 60px;
+
+  @media screen and (min-width: 993px) {
+    margin-top: 60px;
+  }
 }
 
 .divorce__title {
@@ -383,6 +387,10 @@
   line-height: 140%;
   text-transform: uppercase;
   color: #242424;
+
+  @media screen and (min-width: 993px) {
+    font-size: 21px;
+  }
 }
 
 .divorce__subtitle {
@@ -403,6 +411,7 @@
 }
 
 .steps__container {
+  margin-bottom: 60px;
 }
 
 .steps__title {
@@ -418,6 +427,7 @@
 }
 
 .steps__item {
+  padding: 20px;
   background-color: #f4f4f4;
 }
 
@@ -425,7 +435,51 @@
   margin-bottom: 10px;
 }
 
+.step__title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #242424;
+}
+
 .step__pic {
+  margin-bottom: 10px;
+
   width: 100%;
   height: auto;
+}
+
+.step__item {
+  padding-left: 20px;
+  position: relative;
+  font-size: 17px;
+  line-height: 141%;
+  color: #242424;
+}
+
+.step__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.step__item::before {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #69cccb;
+}
+
+.step__text {
+  font-size: 17px;
+  line-height: 141%;
+  color: #242424;
+}
+
+.step__text:not(:last-child) {
+  margin-bottom: 15px;
 }
