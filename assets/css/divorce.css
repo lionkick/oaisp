@@ -391,4 +391,55 @@
     margin-top: 100px;
     margin-bottom: 100px;
   }
+}
+
+.divorce__container {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.divorce__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #242424;
+}
+
+.divorce__subtitle {
+  margin-bottom: 18px;
+  font-size: 17px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #242424;
+}
+
+.divorce__text {
+  margin-bottom: 10px;
+  font-size: 17px;
+  line-height: 140%;
+  color: #242424;
+}
+
+.steps__title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 140%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #242424;
+}
+
+.steps__item {
+  background-color: #f4f4f4;
+}
+
+.steps__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.step__pic {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=divorce.css.map */
