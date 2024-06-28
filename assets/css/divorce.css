@@ -184,11 +184,13 @@
 .feedback__body {
   position: relative;
 }
+
 @media (max-width: 768px) {
   .feedback .feedback-slider.swiper {
     overflow: visible;
   }
 }
+
 .feedback .feedback-slide {
   padding: 1px;
 }

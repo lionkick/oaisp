@@ -159,8 +159,6 @@
 // Feedback
 .feedback {
   overflow: hidden;
-  &__container {
-  }
 
   &__title {
     margin-bottom: 40px;
@@ -172,20 +170,12 @@
   &__body {
     position: relative;
   }
-
-  &__slider {
-  }
 }
 .feedback .feedback-slider {
   @media (max-width: 768px) {
     &.swiper {
       overflow: visible;
     }
-  }
-  &__wrapper {
-  }
-
-  &__slide {
   }
 }
 .feedback .feedback-slide {
